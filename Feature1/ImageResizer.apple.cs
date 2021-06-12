@@ -6,8 +6,8 @@ using System.Text;
 using UIKit;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(Plugin.Feature1.ImageResizer))]
-namespace Plugin.Feature1
+[assembly: Dependency(typeof(Plugin.ImageResizer.ImageResizer))]
+namespace Plugin.ImageResizer
 {
     /// <summary>
     /// Interface for Feature1

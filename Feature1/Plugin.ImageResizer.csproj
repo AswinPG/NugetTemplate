@@ -1,4 +1,4 @@
-<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
 
   <PropertyGroup>
     <!--Work around so the conditions work below-->
@@ -9,15 +9,15 @@
     netstandard1.0;netstandard2.0;MonoAndroid90;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
     For UWP update the version number with a version number you have installed.
     -->
-    <AssemblyName>Plugin.Feature1</AssemblyName>
-    <RootNamespace>Plugin.Feature1</RootNamespace>
-    <PackageId>Plugin.Feature1</PackageId>
+    <AssemblyName>Plugin.ImageResizer</AssemblyName>
+    <RootNamespace>Plugin.ImageResizer</RootNamespace>
+    <PackageId>Plugin.E0.ImageResizer</PackageId>
     
-    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <Product>Plugin.E0.ImageResizer</Product>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
-    <Version>1.0.0.0</Version>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <Version>1.0.1.0</Version>
+    <PackageVersion>1.0.1.0</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <DefineConstants>$(DefineConstants);</DefineConstants>
@@ -31,23 +31,25 @@
     <!--TODO: Fill these in-->
     <!--See the following for a list of valid license expressions: https://spdx.org/licenses/ -->
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>LINK TO PROJECT</PackageProjectUrl>
-    <RepositoryUrl>LINK TO PROJECT</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/AswinPG/NugetTemplate</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AswinPG/NugetTemplate</RepositoryUrl>
     <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
     <PackageIconUrl>ICON URL</PackageIconUrl>
-    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, Feature1</PackageTags>
+    <PackageTags>xamarin, ios, android, xamarin.forms, plugin, Image, Resizer</PackageTags>
     
     <Title>Feature1 Plugin for Xamarin and Windows</Title>
     <Summary>Summary of nuget</Summary>
-    <Description>Plugin Description</Description>
+    <Description>This is a simple library to resize images. Code taken from microsoft xamarin forms samples</Description>
     
     
     <Owners>YOU</Owners>
-    <Authors>YOU</Authors>
+    <Authors>AswinPG</Authors>
     <Copyright>Copyright 2019</Copyright>
     
     <!--When built in 2019 will remove extra references on pack for iOS in System.Drawing.Common-->
     <DisableExtraReferences>false</DisableExtraReferences>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Epoq Zero</Company>
     
   </PropertyGroup>
   

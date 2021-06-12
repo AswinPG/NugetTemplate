@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Plugin.Feature1
+namespace Plugin.ImageResizer
 {
     /// <summary>
     /// Cross Feature1
